@@ -89,8 +89,25 @@
   font-size: 1.5em;
   margin-bottom: 3.5em;
 }
+.about__expInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .about__expInfoBox > li {
   margin-top: 2em;
+  width: fit-content;
+  position: relative;
+}
+.about__expInfoBox > li::before {
+  content: "";
+  position: absolute;
+  width: 1.4em;
+  height: 1.4em;
+  border-radius: 50%;
+  background-color: #891818;
+  top: -0.1em;
+  left: -2em;
 }
 
 .myBrand {
