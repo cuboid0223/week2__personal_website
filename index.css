@@ -61,6 +61,13 @@
   margin-top: 2.5em;
   justify-content: space-between;
 }
+.banner__iconsBox > li {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.banner__iconsBox > li:hover {
+  transform: translateY(-5px);
+}
 
 .about__container {
   width: fit-content;
@@ -133,8 +140,17 @@
 .otherWorks__container {
   max-width: 75em;
 }
+.otherWorks__container li > div {
+  overflow: hidden;
+}
 .otherWorks__container img {
+  cursor: pointer;
   margin-bottom: 1em;
+  transition: 0.7s;
+  overflow: hidden;
+}
+.otherWorks__container img:hover {
+  transform: scale(1.2);
 }
 .otherWorks__subtitle {
   margin-top: 1em;
