@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,900&display=swap");
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+.title {
+  font-size: 4em;
+  padding-top: 1em;
+}
+
+.about__container,
+.myBrand__container,
+.otherWorks__container,
+.footer__container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blackBackground {
+  background-color: black;
+  color: #ffffff;
+}
+
+.banner {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("./images/banner.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__infoBox {
+  color: #ffffff;
+  max-width: 30vw;
+}
+.banner__infoBox > pre,
+.banner__infoBox > p {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.banner__myName {
+  font-size: 5em;
+  line-height: 1.2em;
+  font-weight: 900;
+}
+
+.banner__infoBox > p {
+  margin: 2em 0.5em 0 0.5em;
+}
+
+.banner__iconsBox {
+  display: flex;
+  margin-top: 2.5em;
+  justify-content: space-between;
+}
+
+.about__container {
+  width: fit-content;
+}
+
+.about__avatar {
+  margin-top: 2.5em;
+}
+
+.about__basicInfoBox {
+  padding: 1.5em 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 1.5em;
+}
+.about__basicInfoBox > li + li {
+  margin-top: 0.5em;
+}
+
+.about__basicInfoBox > li:last-child {
+  line-height: 2em;
+}
+
+.about__expInfoBox {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 3.5em;
+}
+.about__expInfoBox > li {
+  margin-top: 2em;
+}
+
+.myBrand {
+  padding-bottom: 10em;
+}
+.myBrand__container {
+  max-width: 75em;
+}
+.myBrand__subtitle {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+.myBrand__content {
+  font-size: 1.2em;
+  margin: 2em 0 4em;
+}
+
+.myBrand__photoBox {
+  margin-top: 2.5em;
+  display: flex;
+}
+
+.otherWorks__container {
+  max-width: 75em;
+}
+.otherWorks__container img {
+  margin-bottom: 1em;
+}
+.otherWorks__subtitle {
+  margin-top: 1em;
+  margin-bottom: 3.5em;
+}
+.otherWorks__topWorksBox,
+.otherWorks__centerWorksBox,
+.otherWorks__bottomWorksBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  font-size: 1.2em;
+}
+
+footer {
+  padding-bottom: 4em;
+}
+
+.footer__mail,
+.footer__phone {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
