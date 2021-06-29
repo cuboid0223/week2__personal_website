@@ -143,6 +143,9 @@ body {
 .myBrand__photoBox > li:nth-child(1) {
   margin-bottom: 2.5em;
 }
+.myBrand__photoBox > li:nth-child(2) {
+  margin-right: 1.5em;
+}
 
 .otherWorks .container {
   max-width: 75em;
