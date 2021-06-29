@@ -71,7 +71,7 @@ body {
   transform: translateY(-5px);
 }
 
-.about__container {
+.about > .container {
   width: fit-content;
 }
 
