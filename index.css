@@ -2,24 +2,20 @@
 * {
   box-sizing: border-box;
 }
-.container {
-  max-width: 1920px;
-  margin: 0 auto;
+body {
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-style: italic;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .title {
   font-size: 4em;
   padding-top: 1em;
-}
-
-.about__container,
-.myBrand__container,
-.otherWorks__container,
-.footer__container {
-  margin: 0 auto;
-  text-align: center;
 }
 
 .blackBackground {
@@ -28,7 +24,7 @@
 }
 
 .banner {
-  height: 100vh;
+  min-height: 958px;
   background-size: cover;
   background-position: center center;
   background-image: url("./images/banner.png");
@@ -39,21 +35,27 @@
 
 .banner__infoBox {
   color: #ffffff;
-  max-width: 30vw;
+  max-width: 300px;
 }
-.banner__infoBox > pre,
-.banner__infoBox > p {
+.banner__infoBox > span,
+.banner__infoBox > h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+.banner__infoBox > h2 {
+  text-align: left;
+}
+
 .banner__myName {
   font-size: 5em;
-  line-height: 1.2em;
   font-weight: 900;
 }
 
-.banner__infoBox > p {
-  margin: 2em 0.5em 0 0.5em;
+.banner__myName > span {
+  display: block;
+  text-align: left;
+  font-size: 20px;
 }
 
 .banner__iconsBox {
@@ -79,7 +81,7 @@
 
 .about__basicInfoBox {
   padding: 1.5em 0;
-  text-align: center;
+
   border-bottom: 1px solid black;
   font-size: 1.5em;
 }
@@ -92,7 +94,6 @@
 }
 
 .about__expInfoBox {
-  text-align: center;
   font-size: 1.5em;
   margin-bottom: 3.5em;
 }
@@ -135,22 +136,29 @@
 .myBrand__photoBox {
   margin-top: 2.5em;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.otherWorks__container {
+.myBrand__photoBox > li:nth-child(1) {
+  margin-bottom: 2.5em;
+}
+
+.otherWorks .container {
   max-width: 75em;
 }
-.otherWorks__container li > div {
+.otherWorks .container li {
   overflow: hidden;
 }
-.otherWorks__container img {
+.otherWorks .container img {
+  display: block;
   cursor: pointer;
   margin-bottom: 1em;
   transition: 0.7s;
   overflow: hidden;
 }
-.otherWorks__container img:hover {
-  transform: scale(1.2);
+.otherWorks .container img:hover {
+  transform: scale(1.05);
 }
 .otherWorks__subtitle {
   margin-top: 1em;
@@ -171,6 +179,9 @@ footer {
 
 .footer__mail,
 .footer__phone {
+  display: block;
   font-size: 1.5em;
   margin-top: 1em;
+  color: white;
+  text-decoration: none;
 }
